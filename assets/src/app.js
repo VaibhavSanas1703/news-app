@@ -69,6 +69,7 @@ searchIcon.addEventListener('click',() => {
 document.addEventListener('keydown',(e) => {
      if(e.key == 'Enter'){
           searchBtn.click()
+          searchBox.classList.remove('active-search')
      }
 })
 
@@ -80,6 +81,7 @@ searchBtn.addEventListener('click',() => {
           getNews(searchInput.value)
           setTimeout(() => {
                searchInput.value = ''
+               searchBox.classList.remove('active-search')
           }, 1200);
      }
 })
