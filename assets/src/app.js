@@ -16,7 +16,6 @@ const getNews = async (query) => {
           const data = await res.json()
           const newsdata = data.articles;
           let showdata = ""
-          console.log(data);
           
           newsdata.forEach((news) => {
                const imageNot = news.image == null ? "assets/images/image_not.png" : news.image;
@@ -43,7 +42,7 @@ const getNews = async (query) => {
 
           } 
           catch (error) {
-          alert('Server not response please try after some time?')
+          document.body.innerHTML = 'Server not respond please try after some time?'
           }
      }
 

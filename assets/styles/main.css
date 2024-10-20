@@ -16,6 +16,8 @@
 
 body{
      background: var(--bg-color);
+     color: #fff;
+
 }
 
 h1{
@@ -169,8 +171,8 @@ p{
 }
 
 .search-icon{
-     width: 35px;
-     height: 35px;
+     width: 45px;
+     height: 45px;
      background: #662E9B;
      display: flex;
      align-items: center;
@@ -223,11 +225,6 @@ p{
      }
 
      .search-box{
-          opacity: 0;
-          visibility: hidden;
-     }
-
-     .search-box{
           width: 100%;
           position: fixed;
           height: 0;
@@ -235,11 +232,12 @@ p{
           left: 0;
           background: #191919;
           justify-content: center;
-          transition: opacity .5s;
           flex-direction: column;
           align-items: center;
           padding: 0 15px;
           gap: 10px;
+          transition: height .4s;
+          overflow: hidden;
      }
 
      .search-box input{
@@ -265,12 +263,12 @@ p{
 
      .search-icon svg{
           position: absolute;
-          top: 5px;
-          left: 7px;
+          top: 8px;
+          left: 9px;
      }
 
      .active-search{
-          height: 100px;
+          height: 110px;
      }
 
      .news-container{
