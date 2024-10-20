@@ -230,7 +230,7 @@ p{
      .search-box{
           width: 100%;
           position: fixed;
-          height: 100px;
+          height: 0;
           top: 75px;
           left: 0;
           background: #191919;
@@ -270,8 +270,7 @@ p{
      }
 
      .active-search{
-          opacity: 1;
-          visibility: visible;
+          height: 100px;
      }
 
      .news-container{

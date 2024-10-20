@@ -41,11 +41,11 @@ const getNews = async (query) => {
 
           newsContainer.innerHTML = showdata;
 
-     } 
-     catch (error) {
-          document.write('Some Error While Fetching data!')
+          } 
+          catch (error) {
+          alert('Server not response please try after some time?')
+          }
      }
-}
 
 nav_links.forEach((item) => {
      item.addEventListener('click',(e) => {
